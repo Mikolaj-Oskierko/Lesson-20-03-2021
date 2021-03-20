@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Box Model</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/Lesson-20-03-2021.css">
+	<link rel="icon" type="image/png" href="PIC/boxes.png"/>
+</head>
+
+<body>
+	<header>
+		<h1>Box Model</h1>
+	</header>
+
+	<div id="Navigation">
+		<nav>
+			<h3>Navigation</h3>
+				<p><a href=#one>Beginning</a></p>
+				<p><a href=#one>Chapter 1</a></p>
+				<p><a href=#one>Chapter 2</a></p>
+				<p><a href=#one>Chapter 3</a></p>
+				<p><a href=#one>The End</a></p>
+	</div>
+
+	<section>
+	<h2>Height and Width</h2>
+	<ul>
+		<li>The default width of inline elements is the content</li>
+		<li>The elements that are not inline can take width and height properties - we saw this in the Display lecture</li>
+	</ul>
+	</section>
+	<section>
+		<h2>Border</h2>
+		<ul>
+			<li>Any element can have a border around it</li>
+			<li>Border property specifies style, width and color</li>
+			<li>The border style MUST be specified</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Border-style:</h2>
+		<ul>
+			<li>None, dotted, dashed, solid, double, groove, ridge, inset, outset, hidden</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Border width and color</h2>
+		<ul>
+			<li>Width</li>
+			<ul>
+				<li>Set in pixels or thin, medium, large</li>
+			</ul>
+			<li>Color</li>
+			<ul>
+				<li>Name - "blue"</li>
+				<li>RGB - rgb(0,0,255);</li>
+				<li>hex - #000FF</li>
+				<li>Transparent</li>
+			</ul>
+		</ul>
+	</section>
+	<section>
+		<h2>Specifying individual sides</h2>
+		<div id="Divider">
+			<p id="Code">border-width: 3px;</p>
+		</div>
+		<div id="Divider">
+			<p><span id="Code">border-width: 1px 10 px;</span><span> - 1px border on top and bottom, 10px border on right and left.</span></p>
+		</div>
+		<div id="Divider">
+			<p><span id="Code">border-width: 3px 10px 20px;</span><span> - 3px border on top, 10 px borders on right and left, 20px border on the bottom</span></p>
+		</div>
+	</section>
+	<section>
+		<h2>Margin</h2>
+		<ul>
+			<li>Margin is additional space <span id="UnderItalic">outside</span> your border - between you and neighbor</li>
+			<li>Positive margin</li>
+			<ul>
+				<li>element moves right / down</li>
+			</ul>
+		</ul>
+	</section>
+	<section>
+		<h2>Padding</h2>
+		<ul>
+			<li>Padding is additional space <span id="UnderItalic">between</span> the element and its border.</li>
+			<li>Positive padding</li>
+			<ul>
+				<li>Border moves outward from element</li>
+			</ul>
+		</ul>
+	</section>
+	<section>
+		<h2>Centering an Element</h2>
+		<ul>
+			<li>To horizontally center an element use:</li>
+			<ul>
+				<li>margin: 0 auto;</li>
+			</ul>
+			<li>But...</li>
+			<ul>
+				<li>The element must display: block</li>
+				<li>The element must not float</li>
+				<li>The element must not have a fixed or absolute position</li>
+				<li>The element must have a width that is not auto</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Box sizing</h2>
+		<ul>
+			<li>Box-sizing takes some of the "math" out</li>
+			<li>Options:</li>
+			<ul>
+				<li>Content-box: default additive</li>
+				<li>Border-box: width takes content, padding, and border into consideration</li>
+			</ul>
+		</ul>
+	</section>
+	<section>
+		<h2>Measurments</h2>
+		<ul>
+			<li>Absolute - set to specyfic size</li>
+			<ul>
+				<li>px, mm, cm, pt, ...</li>
+			</ul>
+			<li>Fluid - sets size relative to surrounding elements</li>
+			<ul>
+				<li>%, vw, vh</li>
+				<li>em (for font): 1em is current size, .75 is 75% of the current size</li>
+				<li>Rem (for font): 1 rem is curren size of root element</li>
+			</ul>
+		</ul>
+	</section>
+	<section>
+		<h2>Review</h2>
+		<ul>
+			<li>Design sketches should be done with box model (margin, border padding, content) on mind.</li>
+			<li>Use box-model to reduce the complexity</li>
+			<li>Margin must be always considered</li>
+		</ul>
+</body>
+</html>
